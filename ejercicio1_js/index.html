@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registro de Estudiantes y Notas</h1>
+
+    <form id="form-estudiante">
+        <label for="codigo">Codigo del Estudiante:</label>
+        <input type="text" id="codigo" required>
+
+        <label for="nombre">Nombre del Estudiante:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="nota1">Nota del Primer 20%:</label>
+        <input type="nunber" id="nota1" min="0" max="5" step="0.1" required>
+
+        <label for="nota2">Nota del Segundo 20%:</label>
+        <input type="number" id="nota2" min="1" max="5" step="0.1" required>
+
+        <label for="nota3">Nota del Tercer 20%:</label>
+        <input type="number" id="nota3" min="0" max="5" step="0.1" required>
+
+        <label for="nota4">Nota del 40%:</label>
+        <input type="number" id="nota4" min="0" max="5" step="0.1" required>
+
+        <button type="submit">Registrar Estudiante</button>
+    </form>
+
+    <h2>Estudiantes Registrados</h2>
+    <table id="tabla-estudiantes">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Primer 20%</th>
+                <th>Segundo 20%</th>
+                <th>Tercerer 20%</th>
+                <th>40%</th>
+                <th>Definitiva</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
